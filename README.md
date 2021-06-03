@@ -2,8 +2,8 @@
 A port of lemon clicker for the DS using libnds and NightFox Lib
 
 # The Game
-Tap the lemon on the touchscreen to increase your score, or press a to tap for you
-When you have 100 points (or more) you can tap the button to buy an autoclicker
+Tap the lemon on the touchscreen to increase your score, or press 'a' to tap for you
+When you have 100 points (or more) you can press 'x' or tap the button to buy an autoclicker
 
 # TODO
 - Implement a **working** saving and loading system
