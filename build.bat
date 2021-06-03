@@ -1,4 +1,4 @@
 @echo off
 make clean
 make
-Lemon_Clicker_NDS.nds
+Lemon-Clicker-NDS.nds

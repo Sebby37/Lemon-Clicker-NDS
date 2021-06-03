@@ -115,7 +115,7 @@ int main(void) {
 		}
 		
 		// Collision code for clicking the lemon
-		if (((held & KEY_TOUCH) && (touch.px >= 40) && (touch.py >= 32) && (touch.px <= 176) && (touch.py <= 156)) || (held & KEY_A) || (held & KEY_B)) {
+		if (((held & KEY_TOUCH) && (touch.px >= 40) && (touch.py >= 32) && (touch.px <= 176) && (touch.py <= 156)) || (held & KEY_A)) {
 			lemon_pressed = true;
 			NF_SpriteFrame(GameScreen, 0, lemon_pressed);
 			if (lemon_canGivePoints) {
@@ -129,7 +129,7 @@ int main(void) {
 		}
 		
 		// Collision code for clicking the autoclicker button
-		if ((held & KEY_TOUCH) && (touch.px >= 192) && (touch.py >= 0) && (touch.px <= 256) && (touch.py <= 64)) {
+		if (((held & KEY_TOUCH) && (touch.px >= 192) && (touch.py >= 0) && (touch.px <= 256) && (touch.py <= 64)) || (held & KEY_X)) {
 			autoButton_pressed = true;
 			NF_SpriteFrame(GameScreen, 1, autoButton_pressed);
 			if (autoButton_canGiveClicks && points >= 100) {
@@ -179,6 +179,7 @@ int main(void) {
 		globalTimer += 1;
 	}
 	saveGame();
+	exit(0);
 	return 0;
 }
 
